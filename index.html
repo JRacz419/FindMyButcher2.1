@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find My Butcher</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 
@@ -45,11 +46,16 @@
     <section class="heroContainer">
         <h1>Discover Local Butchers</h1>
         <div class="searchContainer">
-            <form action="#" methods="get" class="searchBar">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by State">
+            <form action="https://www.google.com/search" class="search" id="search-bar">
+                <input type="search" placeholder="Search by State ..." name="q" class="search__input">
+    
+                <div class="search__button" id="search-button">
+                    <i class="ri-search-2-line search__icon"></i>
+                    <i class="ri-close-line search__close"></i>
+                </div>
             </form>
         </div>
     </section>
-    
+    <script src="main.js"></script>
 </body>
 </html>
