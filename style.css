@@ -101,33 +101,53 @@ header nav ul li a.active {
     color: white;
     display: flex;
     justify-content: center;
-    font-size: 56px;
-    padding: .3em;
+    font-size: 70px;
+    padding: .4em;
     margin-top: 3em;
     margin-left: 100px;
     display: flex;
 }
 
+@media (max-width: 500px) {
+    .heroContainer h1 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        padding: .4em;
+        margin-top: 2em;
+        margin-left: 100px;
+        display: flex;
+    }
+}
+
+
 
 
 /* search bar */
 
-/*
-.searchContainer {
-    padding: 0 30px;
-    display: flex;
-    margin-left: 100px;
-}
-*/
 
 .searchContainer {
-    height: 100vh;
+    height: 7em;
     margin-inline: 1.5rem;
-    display: grid;
-    place-items: center;
-
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
   }
-  
+
+  @media only screen and (max-width: 900px) {
+    .searchContainer {
+        height: 7em;
+        margin-inline: 1.5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: .2em;
+        border: 1px solid green;
+    }
+}
+
+/*   */
+
   .search {
     position: relative;
     width: 76px;
