@@ -130,7 +130,7 @@ header nav ul li a.active {
 
 ::selection{
     color: #fff;
-    background: #4285f4;
+    
   }
   .wrapper{
     width: 370px;
@@ -198,7 +198,7 @@ header nav ul li a.active {
   }
   .search input:focus{
     padding-left: 42px;
-    border: 2px solid #4285f4;
+    border: 2px solid red;
   }
   .search input::placeholder{
     color: #bfbfbf;
