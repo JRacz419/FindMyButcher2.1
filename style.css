@@ -135,6 +135,8 @@ header nav ul li a.active {
   .wrapper{
     width: 370px;
     margin: 85px auto 0;
+ 
+    border-radius: 7px;
   }
   .select-btn, li{
     display: flex;
@@ -150,6 +152,7 @@ header nav ul li a.active {
     border-radius: 7px;
     justify-content: space-between;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 3px solid red;
   }
   .select-btn i{
     font-size: 31px;
