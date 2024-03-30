@@ -101,8 +101,8 @@ header nav ul li a.active {
     color: white;
     display: flex;
     justify-content: center;
-    font-size: 70px;
-    padding: .4em;
+    font-size: 72px;
+    padding: .8em;
     margin-top: 3em;
     margin-left: 100px;
     display: flex;
@@ -113,8 +113,8 @@ header nav ul li a.active {
         color: white;
         display: flex;
         justify-content: center;
-        font-size: 50px;
-        padding: .4em;
+        font-size: 46px;
+        padding: 12px;
         margin-top: 2em;
         margin-left: 100px;
         display: flex;
@@ -153,7 +153,7 @@ header nav ul li a.active {
     justify-content: space-between;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 
-    opacity: 0.8;
+    opacity: 0.7;
   }
   .select-btn i{
     font-size: 31px;
@@ -169,7 +169,7 @@ header nav ul li a.active {
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    opacity: 0.8;
+    opacity: 0.7;
 
   }
   .wrapper.active .content{
@@ -232,3 +232,129 @@ header nav ul li a.active {
     border-radius: 5px;
     background: #f2f2f2;
   }
+
+  /*featured responsive business cards section*/
+  
+  .featured-business-cards-container {
+    margin-top: 8em;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex:1;
+    gap: 20px;
+  }
+
+  .red-meat-text { 
+    color:white;
+
+
+}
+
+  @media (max-width: 930px) {
+    .featured-business-cards-container {
+      margin-top: 70px;
+      height: 500px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex:1;
+      gap: 20px;
+    }
+  }
+  /*card design*/
+  .top-rated-butchers {
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 4em;
+    font-size: 72px;
+    color: white;
+  }
+  @media (max-width: 940px) {
+    .top-rated-butchers {
+      text-align: center;
+      opacity:0.8;
+      margin-top: 4em;
+      font-size: 55px;
+    }
+  }
+.card {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 16px 18px rgba(42, 42, 42, 0.2);
+  overflow: hidden;
+  width: 300px;
+  height: 420px;
+  opacity: 0;
+  filter:blur(3px);
+  transform: translateX(-100%);
+  transition: all .75s;
+}
+.card:hover {
+  box-shadow: 0 6px 6px 0 rgb(99, 99, 99);
+  margin-top: -5px;
+  margin-bottom: 5px;
+  transition: .5s;
+}
+.card-header:hover {
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.1, 1.1, 1);
+  transition: all 1s linear;
+ }
+ 
+a {
+  text-decoration: none;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}  
+.card-body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  min-height: 250px;
+}
+  
+.business-name {
+  font-size: 30px;
+  color: black;
+  margin-top:2px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  opacity: 80%;
+  padding: 12px;
+
+}
+.business-address {
+  font-style: normal;
+  font-family: roboto;
+  color:black;
+  text-align: center;
+  padding-bottom: 8px;
+}
+.business-city {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2px;
+  border-top: 1px solid black;
+  position: relative;
+  padding: 12px;
+  color: black;
+}
+.span-red {
+  color: red;
+  opacity: 95%;
+}
